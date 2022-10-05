@@ -54,11 +54,13 @@ import random
 # for i in range(10):
 #     num = random.random()*5+10
 #     print(num)
+
 done = False
 while not done:
     num = random.randrange(1, 101)
     z = 0
-    while not done:
+    guessed = False
+    while not guessed:
         x = int(input("Guess the number? "))
         if x == num:
             print("You are correct!")
@@ -67,8 +69,7 @@ while not done:
             if i.strip() == "n":
                 done = True
             else:
-                num = random.randrange(1, 101)
-                z = 0
+                guessed = True
         elif x < num:
             print("The number is higher")
             z += 1
