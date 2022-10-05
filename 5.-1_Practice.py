@@ -1,4 +1,4 @@
-# For loops are used a certain number of time
+# For 6loops are used a certain number of time
 # while loops are used till a criteria is met
 import random
 # for i in range(5):
@@ -59,12 +59,12 @@ while not done:
     num = random.randrange(1, 101)
     z = 0
     while not done:
-        x = int(input("Guess the number?"))
+        x = int(input("Guess the number? "))
         if x == num:
             print("You are correct!")
             print("You took",z,"guesses")
             i = input("Do you want to play again? y/n")
-            if i == "n":
+            if i.strip() == "n":
                 done = True
             else:
                 num = random.randrange(1, 101)
