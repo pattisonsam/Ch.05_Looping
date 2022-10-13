@@ -34,7 +34,7 @@ while not done:
         print("You have gotten too hungry. You lose.")
         break
     elif thirst >= 4 and loc > stu:
-        print("Your getting hungry you should eat")
+        print("You're getting hungry you should eat")
     if age == 10:
         z = random.randrange(1, 21)
         print("Because of you age you need to rest")
