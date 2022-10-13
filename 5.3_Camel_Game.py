@@ -51,6 +51,7 @@ while not done:
     if o == 13:
         print("***************************************************")
         print("You found a school willing to help you on your journey")
+        print("***************************************************")
         thirst = 0
         rat = 5
         age = 0
@@ -66,9 +67,9 @@ while not done:
     #Choice A
     if x.upper().strip() == "A":
         print("You move forward at full speed")
-        y = random.randrange(5,11)
+        y = random.randrange(5,9)
         print("You moved forward", y, "miles")
-        z = random.randrange(1,6)
+        z = random.randrange(4,8)
         loc += y
         thirst += 1
         stu += z
@@ -78,7 +79,7 @@ while not done:
         print("You move forward at moderate speed")
         y = random.randrange(1,6)
         print("You moved forward", y, "miles")
-        z = random.randrange(1,6)
+        z = random.randrange(3,8)
         loc += y
         thirst += 1
         stu += z
@@ -86,7 +87,7 @@ while not done:
     # Choice C
     elif x.upper().strip() == "C":
         y = random.randrange(1,101)
-        z = random.randrange(1, 6)
+        z = random.randrange(3, 8)
         if y == 69:
             print("The kids run from you brilliance.")
             print("You win")
@@ -97,7 +98,7 @@ while not done:
             stu += z
     # Choice D
     elif x.upper().strip() == "D":
-        z = random.randrange(1, 6)
+        z = random.randrange(3, 8)
         if rat == 0:
             print("You have no rations")
             stu += z
@@ -109,7 +110,7 @@ while not done:
             stu += z
     # Choice E
     elif x.upper().strip() == "E":
-        z = random.randrange(1, 6)
+        z = random.randrange(3, 8)
         print("Your getting old and need to rest.")
         age = 0
         thirst += 1
