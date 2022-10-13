@@ -55,24 +55,56 @@ import random
 #     num = random.random()*5+10
 #     print(num)
 
-done = False
-while not done:
-    num = random.randrange(1, 101)
-    z = 0
-    guessed = False
-    while not guessed:
-        x = int(input("Guess the number? "))
-        if x == num:
-            print("You are correct!")
-            print("You took",z,"guesses")
-            i = input("Do you want to play again? y/n")
-            if i.strip() == "n":
-                done = True
-            else:
-                guessed = True
-        elif x < num:
-            print("The number is higher")
-            z += 1
-        else:
-            print("The number is lower")
-            z += 1
+# done = False
+# while not done:
+#     num = random.randrange(1, 101)
+#     z = 0
+#     guessed = False
+#     while not guessed:
+#         x = int(input("Guess the number? "))
+#         if x == num:
+#             print("You are correct!")
+#             print("You took",z,"guesses")
+#             i = input("Do you want to play again? y/n")
+#             if i.strip() == "n":
+#                 done = True
+#             else:
+#                 guessed = True
+#         elif x < num:
+#             print("The number is higher")
+#             z += 1
+#         else:
+#             print("The number is lower")
+#             z += 1
+#
+# for letter in "Death Star":
+#     if letter == " ":
+#         break
+#     print('Current Letter: ',letter)
+# x = 10
+# while x > 0:
+#     print("Current Value: ", x)
+#     x -= 1
+#     if x == 5:
+#         break
+# for letter in "Death Star":
+#     if letter == " ":
+#         continue
+#     print('Current Letter: ',letter)
+# x = 0
+# while x <= 10:
+#     x += 1
+#     if x%2 !=0:
+#         continue
+#     print("Current Value: ", x)
+# print("Peace")
+# x = 0
+# while x <= 10:
+#     if x%2 !=0:
+#         pass
+#     print("Current Value: ", x)
+#     x += 1
+# print("Peace")
+x = 1
+y = 2
+print(x+y)
