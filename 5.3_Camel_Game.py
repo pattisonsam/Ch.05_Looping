@@ -33,13 +33,14 @@ while not done:
     if thirst == 6:
         print("You have gotten too hungry. You lose.")
         break
-    elif thirst >= 4:
+    elif thirst >= 4 and loc > stu:
         print("Your getting hungry you should eat")
     if age == 10:
         z = random.randrange(1, 21)
         print("Because of you age you need to rest")
         stu += z
-    elif age >= 5:
+        print("-----------------------------------------------------")
+    elif age >= 5 and loc > stu:
         print("You should rest your age is catching up to you.")
     if loc <= stu:
         print("The students have overtaken you. You lose.")
@@ -48,6 +49,7 @@ while not done:
         print("The students are getting close. RUN!")
     o = random.randrange(0, 20)
     if o == 13:
+        print("***************************************************")
         print("You found a school willing to help you on your journey")
         thirst = 0
         rat = 5
