@@ -26,12 +26,13 @@ print("All of these options do something different, I could explain it, but its 
 print("Have fun!")
 while not done:
     print("-----------------------------------------------------")
+    #Testing the conditions to see if something is wrong with you
     if loc >= 200:
         print("The students have finally given up the chase. You win!")
-        done = True
+        break
     if thirst == 6:
         print("You have gotten too hungry. You lose.")
-        done = True
+        break
     elif thirst >= 4:
         print("Your getting hungry you should eat")
     if age == 10:
@@ -42,7 +43,7 @@ while not done:
         print("You should rest your age is catching up to you.")
     if loc <= stu:
         print("The students have overtaken you. You lose.")
-        done = True
+        break
     elif loc-stu < 15:
         print("The students are getting close. RUN!")
     o = random.randrange(0, 20)
@@ -51,6 +52,7 @@ while not done:
         thirst = 0
         rat = 5
         age = 0
+    #Your choices
     print("A. Run full speed!")
     print("B. Run moderate speed")
     print("C. Code for your job")
@@ -59,6 +61,7 @@ while not done:
     print("F. Check the code")
     print("Q. Quit")
     x = input("What is you choice: ")
+    #Choice A
     if x.upper().strip() == "A":
         print("You move forward at full speed")
         y = random.randrange(5,11)
@@ -68,6 +71,7 @@ while not done:
         thirst += 1
         stu += z
         age += 2
+    # Choice B
     elif x.upper().strip() == "B":
         print("You move forward at moderate speed")
         y = random.randrange(1,6)
@@ -77,17 +81,19 @@ while not done:
         thirst += 1
         stu += z
         age += 1
+    # Choice C
     elif x.upper().strip() == "C":
         y = random.randrange(1,101)
         z = random.randrange(1, 6)
         if y == 69:
             print("The kids run from you brilliance.")
             print("You win")
-            done = True
+            break
         else:
             print("You work so hard but get nothing in return")
             thirst += 1
             stu += z
+    # Choice D
     elif x.upper().strip() == "D":
         z = random.randrange(1, 6)
         if rat == 0:
@@ -99,19 +105,23 @@ while not done:
             rat -= 1
             thirst = 0
             stu += z
+    # Choice E
     elif x.upper().strip() == "E":
         z = random.randrange(1, 6)
         print("Your getting old and need to rest.")
         age = 0
         thirst += 1
         stu += z
+    # Choice F
     elif x.upper().strip() == "F":
         print("Your location is",loc)
         print("The kids are at",stu)
         print("Your rations are",rat)
         print("Your hunger and thirst is",thirst)
+    # Choice Q
     elif x.upper().strip() == "Q":
-        done = True
+        break
+    # Not a choice
     else:
         print("Not an option choose again.")
 print("Thanks for playing")
