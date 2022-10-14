@@ -28,10 +28,10 @@ while not done:
     print("-----------------------------------------------------")
     #Testing the conditions to see if something is wrong with you
     if loc >= 200:
-        print("The students have finally given up the chase. You win!")
+        print("The students have finally given up the chase. \033[1;33m You Win!\033[m")
         break
     if thirst == 6:
-        print("You have gotten too hungry. You lose.")
+        print("You have gotten too hungry. \033[1;31m You Lose.\033[m")
         break
     elif thirst >= 4 and loc > stu:
         print("You're getting hungry you should eat")
@@ -43,7 +43,7 @@ while not done:
     elif age >= 5 and loc > stu:
         print("You should rest your age is catching up to you.")
     if loc <= stu:
-        print("The students have overtaken you. You lose.")
+        print("The students have overtaken you. \033[1;31m You Lose\033[m")
         break
     elif loc-stu < 15:
         print("The students are getting close. RUN!")
@@ -90,7 +90,7 @@ while not done:
         z = random.randrange(3, 8)
         if y == 69:
             print("The kids run from you brilliance.")
-            print("You win")
+            print("\033[1;33m You Win\033[m")
             break
         else:
             print("You work so hard but get nothing in return")
@@ -127,4 +127,4 @@ while not done:
     # Not a choice
     else:
         print("Not an option choose again.")
-print("Thanks for playing")
+print("\nThanks for playing")
